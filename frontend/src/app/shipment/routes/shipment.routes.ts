@@ -3,6 +3,7 @@ import {ShipmentListPageComponent} from "../container/shipment-list-page.compone
 import {ShipmentCaptureComponent} from "../components/shipment-capture.component";
 import {ShipmentCapturePageComponent} from "../container/shipment-capture-page.component";
 import {TaskListPageComponent} from "../container/task-list-page.component";
+import {ShipmentCapturePageTabComponent} from "../container/shipment-capture-page-tab.component";
 
 /*
  * Router configuration for the component task
@@ -19,6 +20,10 @@ const SHIPMENT_ROUTES: Routes = [
     {
         path: "tasks",
         component: TaskListPageComponent
+    },
+    {
+        path: "capturetest",
+        component: ShipmentCapturePageTabComponent
     },
 ];
 

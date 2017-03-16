@@ -1,0 +1,20 @@
+<h1>Tab-TestPage</h1>
+<p-tabView>
+    <p-tabPanel header="Seite 1">
+        <educama-shipment-capture
+                (createShipmentEvent)="onCreateShipmentEvent($event)"
+                (createShipmentCancellationEvent)="onCreateShipmentCancellationEvent($event)"
+        >
+        </educama-shipment-capture>
+    </p-tabPanel>
+    <p-tabPanel header="Seite 2">
+        <educama-shipment-capture-two></educama-shipment-capture-two>
+    </p-tabPanel>
+    <p-tabPanel header="Seite 3">
+        Lorem ipsum
+    </p-tabPanel>
+</p-tabView>
+
+<!-- Buttons -->
+<button id="shipment-capture-component_commit-button" pButton type="button" (click)="cancel()" label="Absenden"></button>
+<button id="shipment-capture-component_cancel-button" pButton type="button" (click)="createShipment()" label="Abbrechen"></button>

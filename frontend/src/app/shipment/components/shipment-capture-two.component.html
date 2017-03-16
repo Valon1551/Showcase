@@ -1,0 +1,54 @@
+
+<form name="form" [formGroup]="shipmentCaptureForm" class="shipment-capture-form">
+    <p-panel header="Frachtgut">
+        <div class="ui-g ui-fluid">
+
+            <div class="ui-g-12 ui-md-6">
+                <label class="ui-g-12 ui-md-3">Anzahl Pakete</label>
+            </div>
+
+            <div class="ui-g-12 ui-md-6">
+                <label class="ui-g-12 ui-md-3">Beschreibung</label>
+            </div>
+
+            <div class="ui-g-12 ui-md-6">
+                <input class="ui-g-12 ui-md-9 ui-lg-8" id="shipment-capture-component_customer3" type="text" p-inputtext formControlName="customer">
+            </div>
+
+            <div class="ui-g-12 ui-md-6">
+                <textarea class="ui-g-12 ui-md-9 ui-lg-8" id="shipment-capture-component_receiver-address2" p-intputtextarea formControlName="receiverAddress"></textarea>
+            </div>
+
+            <div class="ui-g-12 ui-md-6">
+                <label class="ui-g-12 ui-md-3">Gesamtgewicht (in kg)</label>
+            </div>
+
+            <div class="ui-g-12 ui-md-6"></div>
+
+            <div class="ui-g-12 ui-md-6">
+                <input class="ui-g-12 ui-md-9 ui-lg-8" id="shipment-capture-component_customer4" type="text" p-inputtext formControlName="customer">
+            </div>
+
+            <div class="ui-g-12 ui-md-6"></div>
+
+            <div class="ui-g-12 ui-md-6">
+                <label class="ui-g-12 ui-md-3">Gesamtvolumen (in m³)</label>
+            </div>
+
+            <div class="ui-g-12 ui-md-6"></div>
+
+            <div class="ui-g-12 ui-md-6">
+                <input class="ui-g-12 ui-md-9 ui-lg-8" id="shipment-capture-component_customer5" type="text" p-inputtext formControlName="customer">
+            </div>
+
+            <div class="ui-g-12 ui-md-6 ui-lg-8"></div>
+            <div class="ui-g-12 ui-md-3 ui-lg-1">
+                <button id="shipment-capture-component_cancel-button4" pButton type="button" (click)="zurueck()" label="Zurück"></button>
+            </div>
+            <div class="ui-g-12 ui-md-3 ui-lg-1">
+                <button id="shipment-capture-component_create-button5" pButton type="button" (click)="weiter()" label="Weiter"></button>
+            </div>
+
+        </div>
+    </p-panel>
+</form>
